@@ -1,5 +1,4 @@
-import { ApolloClient, InMemoryCache } from '@apollo/client'
-import { gql } from '@apollo/client'
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
 
 export const client = new ApolloClient({
   // uri: import.meta.env.REACT_APP_GRAPHQL_ENDPOINT,

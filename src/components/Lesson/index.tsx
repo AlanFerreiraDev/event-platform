@@ -1,7 +1,7 @@
 import { CheckCircle, Lock } from 'phosphor-react'
-import { LessonProps } from './interfaces'
 import { isPast, format } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
+import { LessonProps } from './interfaces'
 import { CapitalizeDateFormatted } from '../../utils'
 
 export const Lesson = ({ title, slug, availableAt, type }: LessonProps) => {
@@ -11,11 +11,11 @@ export const Lesson = ({ title, slug, availableAt, type }: LessonProps) => {
     "EEE' • 'd' de 'MMMM' • 'k'h'mm",
     {
       locale: ptBR,
-    }
+    },
   )
 
   return (
-    <a href="#">
+    <a href={slug}>
       <span className="text-gray-300">
         {CapitalizeDateFormatted({ dateFormatted: availableDateFormatted })}
       </span>

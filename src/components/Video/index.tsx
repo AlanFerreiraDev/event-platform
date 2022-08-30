@@ -1,3 +1,1 @@
-export const Video = () => {
-  return <div className="flex-1 ">Video</div>
-}
+export const Video = () => <div className="flex-1 ">Video</div>
